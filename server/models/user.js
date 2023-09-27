@@ -7,26 +7,21 @@ const userSchema = new Schema(
             type: String,
             required: true,
             unique: true
-
         },
         password:
         {
             type: String,
             required: true,
             unique: true
-
         },
         name:
         {
             type: String,
             required: true
-
         },
         phoneNumber:
         {
             type: String,
-
-
         },
         email:
         {
@@ -34,17 +29,6 @@ const userSchema = new Schema(
             required: true,
             unique: true
         },
-        cars:
-            [
-                {
-                    type: Schema.Types.ObjectId,
-                    ref: 'Car',
-                },
-            ],
-
-        paid: {
-            type: Boolean
-        }
     },
     {
         toJSON: {
